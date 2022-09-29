@@ -1,0 +1,16 @@
+{
+  "name": "etw-graphservice",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ mythcsj/etw-graphservice",
+    "create-local": "graph create --node http://localhost:8020/ mythcsj/etw-graphservice",
+    "remove-local": "graph remove --node http://localhost:8020/ mythcsj/etw-graphservice",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 mythcsj/etw-graphservice"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.29.0",
+    "@graphprotocol/graph-ts": "0.26.0"
+  }
+}
